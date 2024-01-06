@@ -1,1 +1,1 @@
-a website ment to track atendance in various chaplaincy activities
+a website ment to track attendance in various chaplaincy activities
