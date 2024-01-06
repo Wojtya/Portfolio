@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Registration</title>
+    <link rel="stylesheet" href="{% static 'chapAp/styles.css' %}">
+    <!-- Use the following line to import a custom font (replace 'Your+Font+Name' with the desired font name) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=gothicbold&display=swap"> 
+</head>
+<body>
+    <form method="post" action="{% url 'register' %}">
+        {% csrf_token %}
+        <h2>Member Registration</h2>
+
+        {{ form.name.label_tag }}
+        {{ form.name }}
+
+        {{ form.reg_no.label_tag }}
+        {{ form.reg_no }}
+
+        {{ form.association.label_tag }}
+        {{ form.association }}
+
+        {{ form.ministry.label_tag }}
+        {{ form.ministry }}
+
+        {{ form.scc.label_tag }}
+        {{ form.scc }}
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

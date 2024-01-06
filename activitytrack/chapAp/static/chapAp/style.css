@@ -1,0 +1,37 @@
+/* members/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Change to your preferred font */
+    background-color: #f2f2f2; /* Light gray background */
+    color: hsl(0, 100%, 5%); /* Dark text color */
+}
+
+h2 {
+    color: hwb(211 6% 75%); /* Dark blue heading color */
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(247, 192, 11, 0.918); /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px hwb(0 16% 81% / 0.1); /* Light shadow */
+}
+
+input, button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: hsl(197, 91%, 29%); /* Blue button color */
+    color: hsl(30, 9%, 96%); /* White button text color */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hwb(204 0% 36%); /* Darker blue on hover */
+}
